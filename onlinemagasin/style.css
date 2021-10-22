@@ -1,0 +1,471 @@
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+
+/* Baggrund */
+
+body{
+    background: radial-gradient(ellipse at center, rgb(131, 43, 2) 0%, rgb(53, 8, 138) 100%);
+}
+
+/* Style af logo */
+
+nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo{
+    width: 300px;
+
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+    font-size: 17px;
+    font-family: Tahoma, sans-serif;
+
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+}
+.nav-links li a::after{
+    content: '';
+    background: rgb(255, 255, 255);
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    transition: width 0.5s;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+.btn{
+    background: white;
+    color: black;
+    opacity: 30%;
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+
+.content{
+    position: absolute;
+    left: 30;
+    top: 50;
+}
+/* H1 header */
+h1 {
+    color: white;
+    width: 100%;
+    text-align: center; /*Centerer teksten*/
+    padding: 15px;
+    margin: 0;
+    font-family: 'ethnocentric-regular', sans-serif;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+  }
+
+ /* img - button */
+ .container {
+    display: flex;
+    align-items: center;
+   }
+
+   a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    padding-bottom:  30px;
+    padding-top: 30px;
+}
+   
+.container .item:nth-child(2){ /*Only second item padding and center text*/
+padding-left: 1em;
+padding-right: 1em;
+text-align: center;
+}
+
+/* stylesheet for indhold forsiden*/
+#indhold{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 80px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.button {
+    background-color: #2e2249; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'ethnocentric-regular', sans-serif;
+
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+    /* events side */ 
+    #tekstevents{
+         display: flex;
+        justify-content: center;
+        font-size: 20px;
+        color: white;
+        margin-bottom: 20px;
+        font-family: Open Sans; 
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-bottom: 50px;
+    }
+
+.column2 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  .eventbutton{
+        border: none;
+        color: white;
+        padding: 50px 400px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+  }
+
+  .lanevent{
+    padding-top: -40px;
+    padding-bottom: -40px;
+}
+
+/* styling af button på eventsiden */ 
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #a648e6;
+  }
+  
+  .button1:hover {
+    background-color: #893cad;
+    color: white;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #8f00ba;
+  }
+  
+  .button2:hover {
+    background-color: #893cad;
+    color: white;
+  }
+
+  .button3{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #8f00ba;
+  }
+
+  .button3:hover{
+    background-color: #893cad;
+    color: white;
+  }
+
+  #eventtekst1{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    font-family: Open Sans; 
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: -50px;
+  } 
+
+ #laneventtext{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 20px;
+    font-family: Open Sans; 
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 20px;
+ }
+
+ /* Ny begynder site*/
+
+ #nybtext{
+    display: flex;
+   justify-content: center;
+   font-size: 15px;
+   color: white;
+   margin-bottom: 20px;
+   font-family: Open Sans; 
+   padding-left: 45px;
+   padding-right: 45px;
+   padding-bottom: 50px;
+}
+
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row2 {
+    display: flex;
+  }
+  
+  .column2 {
+    flex: 33.33%;
+    padding: 5px;
+
+  }
+
+ /* img - button */
+ .container {
+    display: flex;
+    align-items: center;
+   }
+   
+.container .item:nth-child(2){ /*Only second item padding and center text*/
+padding-left: 1em;
+padding-right: 1em;
+text-align: center;
+}
+#eventtekst1{
+    display: flex;
+   justify-content: center;
+   font-size: 15px;
+   color: white;
+   margin-bottom: 15px;
+   font-family: Open Sans; 
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 15px;
+}
+/* nybegynderguide side */
+#nyguide{
+    width: 100%;
+    margin-bottom: 30px;
+}
+#guidetekst{
+    display: flex;
+    justify-content: center;
+    font-size: px;
+    color: white;
+    margin-bottom: 30px;
+}
+#tekstguide{
+    display: flex;
+    justify-content: center;
+    font-size: px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Two image containers (use 25% for four, and 50% for two, etc) */
+.column3 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row3::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row3 {
+    display: flex;
+  }
+  
+  .column3 {
+    flex: 33.33%;
+    padding-left: 10%;
+    padding-right: 25%;
+    padding-top: 30px;
+  }
+
+  #cthold{
+   display: flex;
+   align-items: left;
+   font-size: 15px;
+   color: white;
+   margin-bottom: 20px;
+   font-family: Open Sans; 
+   padding-left: 45px;
+   padding-right: 45px;
+   padding-bottom: 50px;
+}
+
+.tutorials{
+    display: inline-block;
+}
+
+/* community side */
+#Konkurrence{
+    width: 100%;
+    margin-top: 40px;
+}
+
+#vind{
+    margin-top: 40px;
+    font-size: 20px;
+    color: white;
+}
+
+#mimi{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color:white;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+}
+
+#girlcommunity{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color:white;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px; 
+}
+
+.button4{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #8f00ba;
+  }
+
+  .button4:hover{
+    background-color: #893cad;
+    color: white;
+  }
+
+   /* kontakt os side */
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+    border-color: purple;
+
+}
+
+#indhold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Styling af button */
+#contactButton {
+    background-color:rgb(53, 8, 138);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin-top: 40px;
+}
+label {
+    color: black;
+}
+   /* Footer */
+
+  .footer {
+    background-color: #000;
+    padding: 10px 20px;
+    text-align: left;
+    background-size: 100%;
+    justify-content: space-between;
+    display: flex;
+    opacity: .6;
+}
+
+#textfooter {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#socialmedie {
+    display: flex;
+    align-items: center;
+}
+.icons {
+    width: 50px;
+    display: block;
+    margin-left: 10px;
+}
+.icons img {
+    width: 100%;
+}
+p {
+    margin: 5px;
+    font-size: 14px;
+    
+}
